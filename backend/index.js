@@ -9,20 +9,6 @@ const { DeployContract } = require("./deploy.js");
 const crypto = require("crypto");
 
 const { createHash } = require("crypto");
-async function main() {
-  const hash1 = "0x" + generateRandomSHA256Hash();
-  const hash2 = "0x" + generateRandomSHA256Hash();
-  const x = await DeployContract(hash1, hash2, 12);
-  console.log(x);
-  let temp = await RefillCount(x);
-  console.log(temp);
-  temp = await LimitCount(x);
-  console.log(temp);
-  temp = await IdentityHash(x);
-  console.log(temp);
-  temp = await PrescriptionHash(x);
-  console.log(temp);
-}
 
 function generateRandomSHA256Hash() {
   const randomData = Math.random().toString(36).substring(2, 15);
@@ -34,4 +20,26 @@ function generateRandomSHA256Hash() {
 
   return sha256Hash;
 }
-main();
+
+const {MongoClient} = require("mongodb");
+const express = require("express");
+const app = express();
+const PORT = process.env.PORT || 6000;
+
+const client = new MongoClient(process.env.MONGO_URI);
+
+app.use(express.json());
+
+app.get("/", (req, res)=>{
+  console.log("We are on buys");
+})
+
+app.post("/api/formsubmit", (req, res) => {
+  console.log(JSON.stringify(req.body));
+  res.send("Hello world");
+});
+
+app.listen(PORT, ()=>{
+  console.log("Server started on port " + PORT);
+})
+

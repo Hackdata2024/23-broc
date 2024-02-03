@@ -6,7 +6,7 @@ const Page = () => {
     return (
         <>
             <Header/>
-            <Herosection title ={"Our Story"} imageUrl ={"./about1.svg"}/>
+            <Herosection title ={"Our Story"}/>
         </>
     );
 };

@@ -35,7 +35,7 @@ const Nav = () => {
                                   href="/contact">Contact Us</Link>
                         </li>
                         <li className={styles.Navbar_btn}>
-                            <Link href="/" onClick={() => setOpenMenu(false)}>
+                            <Link href="/form" onClick={() => setOpenMenu(false)}>
                                 <button>
                                     Signup / login
                                 </button>

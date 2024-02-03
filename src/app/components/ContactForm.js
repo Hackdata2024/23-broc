@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import styles from "@/app/styles/contact.module.css"
 import {Mulish} from "next/font/google";
 import {useState} from "react";

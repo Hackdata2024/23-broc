@@ -5,8 +5,6 @@
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 
-
-
 .movieSection{
     background-color: #fff!important;
 }
@@ -153,7 +151,28 @@
 
 }
 
-/*.spline_comp{*/
-/*    */
-/*}*/
+.medical_checkup{
+
+}
+
+.shape_div{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.shape_div_svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 147px;
+}
+
+.custom-shape-divider-bottom-1706958721 .shape-fill {
+    fill: #FFFFFF;
+}
 

@@ -2,7 +2,8 @@
 
 .main_section{
     position: relative;
-    background: linear-gradient(-45deg, #a8e48a, #1eb6d9, #f2d3f7);
+    /*background: linear-gradient(-45deg, #a8e48a, #1eb6d9, #f2d3f7);*/
+    background-color: #ECF4FE;
     background-size: 400% 400%;
     /*animation: gradient-bg 20s ease infinite;*/
 }
@@ -33,7 +34,7 @@
 }
 
 .hero_content p{
-    margin: 2rem 0 4rem 0;
+    margin: 4rem 0 2rem 0;
     font-weight: 300;
     letter-spacing: .05rem;
     line-height: 1.65;

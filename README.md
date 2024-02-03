@@ -5,9 +5,9 @@ The future of secure healthcare, our blockchain-powered system is revolutionizin
 
 ## The Team
 1. Kunal Passan [@kazekunal](https://github.com/kazekunal)
-2. Mudit Gupta
+2. Mudit Gupta [@mudit-51](https://github.com/mudit-51)
 3. Nimansh Endlay
-4. Raj Rajeshwar Singh Bisen
+4. Raj Rajeshwar Singh Bisen [@Anarchist Honeybun](https://github.com/AnarchistHoneybun)
 
 ## Our Tech
 We utilise Next.js, Tailwind and Slint for our frontend, with a backend in Express.js and MongoDB. Our smart contracts are done in Solidity, and we interact with them through infrastructure provided by Infura.

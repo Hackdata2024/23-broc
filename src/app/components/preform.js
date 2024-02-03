@@ -33,7 +33,7 @@ const Preform = () => {
         try {
             const response = await fetch('/api/contact', {
                 method: 'POST',
-                headers: {"Content_Type": "application/json"},
+                headers: {"Content-Type": "application/json"},
                 body: JSON.stringify({
                     p_name: user.p_name,
                     d_name: user.d_name,

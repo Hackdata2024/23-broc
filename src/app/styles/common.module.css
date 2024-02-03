@@ -119,8 +119,8 @@
     height: 0;
     margin: 8px;
     box-sizing: border-box;
-    border: 32px solid #99EDC3;
-    border-color: #99EDC3 transparent #99EDC3 transparent;
+    border: 32px solid cornflowerblue;
+    border-color: cornflowerblue transparent cornflowerblue transparent;
     animation: loading 1.2s infinite;
 }
 @keyframes loading {

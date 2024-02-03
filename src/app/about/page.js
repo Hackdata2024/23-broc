@@ -7,19 +7,6 @@ const Page = () => {
         <>
             <Header/>
             <Herosection title ={"Our Story"} imageUrl ={"./about1.svg"}/>
-            {/*<section className={styles.medical_checkup}>*/}
-            {/*    <div className={styles.medical_checkup_main}>*/}
-            {/*        <div className={styles.medical_checkup_main_img1}>*/}
-            {/*            <p>hello</p>*/}
-            {/*        </div>*/}
-            {/*        <div className={styles.medical_checkup_main_img1}>*/}
-            {/*            <p>hi</p>*/}
-            {/*        </div>*/}
-            {/*        <div className={styles.medical_checkup_main_img1}>*/}
-            {/*            <p>hola</p>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*</section>*/}
         </>
     );
 };

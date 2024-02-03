@@ -42,8 +42,13 @@ app.post("/api/formsubmit", async (req, res) => {
   const db = await client.db("Main");
   const prescription_store = db.collection("Prescription-Data");
   const address_store = db.collection("Blockchain-addresses");
+  
+  delete req.body.p_name;
+  delete req.body.d_name;
+  
   await prescription_store.insertOne({
     IdentityHash: id_hash,
+    PrescriptionData: req.body,
     PrescriptionHash: pres_hash,
   });
   await address_store.insertOne({
@@ -66,9 +71,9 @@ app.post("/api/verify", async(req, res)=>{
   }
   const hash_from_blockchain = await PrescriptionHash(x.ContractAddress);
   const pres_hash_store = db.collection("Prescription-Data");
-  const hash_from_db = await pres_hash_store.findOne({IdentityHash: req.body.IdentityHash});
-  if(hash_from_blockchain === hash_from_db.PrescriptionHash){
-    res.status(200).send("Prescription is valid");
+  const db_data = await pres_hash_store.findOne({IdentityHash: req.body.IdentityHash});
+  if(hash_from_blockchain === db_data.PrescriptionHash){
+    res.status(200).json(db_data.PrescriptionData);
   }else{
     res.status(400).send("Prescription is invalid");
   }

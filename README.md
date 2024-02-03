@@ -4,7 +4,7 @@ The future of secure healthcare, our blockchain-powered system is revolutionizin
 <i>(This project has been written and developed as part of the "Hackdata" hackathon, organized by the ACM Student chapter of Shiv Nadar University, on 3rd,4th February, 2024)</i>
 
 ## The Team
-1. Kunal Passan
+1. Kunal Passan [@kazekunal](https://github.com/kazekunal)
 2. Mudit Gupta
 3. Nimansh Endlay
 4. Raj Rajeshwar Singh Bisen

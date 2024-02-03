@@ -10,7 +10,7 @@ The future of secure healthcare, our blockchain-powered system is revolutionizin
 4. Raj Rajeshwar Singh Bisen [@AnarchistHoneybun](https://github.com/AnarchistHoneybun)
 
 ## Our Tech
-We utilise Next.js, Tailwind and Slint for our frontend, with a backend in Express.js and MongoDB. Our smart contracts are done in Solidity, and we interact with them through infrastructure provided by Infura.
+We utilise Next.js, Tailwind and Slint for our frontend, with a backend in Express.js and MongoDB. Our smart contracts are done in Solidity, and we interact with them through infrastructure provided by [Infura](https://docs.infura.io/getting-started).
 
 ## What we solve
 Our project aims to address a pressing issue within the healthcare industry: medical prescription fraud. With the increasing reliance on digital records and prescriptions, the vulnerability to fraudulent activities has become a significant concern. To combat this, we are leveraging blockchain technology to create a secure and transparent system for managing medical prescriptions.

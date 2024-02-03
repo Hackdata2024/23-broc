@@ -15,7 +15,7 @@ const mulish = Mulish({
     display: 'swap'
 })
 
-const Herosection = ({title,imageUrl}) => {
+const Herosection = ({title,imageUrl,content}) => {
     return (
         <main className={herostyles.main_section}>
             <div className={styles.container}>
@@ -23,7 +23,7 @@ const Herosection = ({title,imageUrl}) => {
                     <div className={herostyles.hero_content}>
                         <h1>{title}</h1>
                         <p>
-                            Welcome to our cutting-edge medical pharmacy store, where trust meets technology. Harnessing the power of blockchain, we ensure a secure and tamper-proof system for purchasing over-the-counter drugs, prioritizing your safety and peace of mind.
+                            {content}
                         </p>
                         <Link href="">
                             <button className={mulish.className}>

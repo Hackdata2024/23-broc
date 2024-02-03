@@ -40,7 +40,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 .navbarItem {
@@ -60,7 +60,7 @@
 }
 
 .navbarItem_3{
-    margin-right: 3rem;
+    margin-right: 28rem;
 }
 
 /*.navbarList .navbarItem a:hover {*/

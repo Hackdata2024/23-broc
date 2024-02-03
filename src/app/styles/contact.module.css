@@ -51,9 +51,12 @@
 
 .grid_card i{
     font-size: 4.2rem;
-    color: #e50914;
+    color: #0b88fe;
 }
 
+.line_contact{
+    width: 10rem;
+}
 
 /*for the main contact two section*/
 
@@ -68,7 +71,7 @@
 
 
 .contact_section span{
-    color: #e50914;
+    color: #0b88fe;
 }
 
 .contact_form{
@@ -105,7 +108,7 @@
 }
 
 .error_msg{
-    color: red;
+    color: #0b88fe;
 }
 
 

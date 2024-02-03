@@ -24,10 +24,15 @@ const Nav = () => {
                                   onClick={() => setOpenMenu(false)}
                             >About Us</Link>
                         </li>
-                        <li className={styles.navbarItem} id={styles.navbarItem_3}>
+                        <li className={styles.navbarItem}>
                             <Link className={styles.navbarLink}
                                   onClick={() => setOpenMenu(false)}
                                   href="/Works">How it works</Link>
+                        </li>
+                        <li className={styles.navbarItem} id={styles.navbarItem_3}>
+                            <Link className={styles.navbarLink}
+                                  onClick={() => setOpenMenu(false)}
+                                  href="/contact">Contact Us</Link>
                         </li>
                         <li className={styles.Navbar_btn}>
                             <Link href="/" onClick={() => setOpenMenu(false)}>

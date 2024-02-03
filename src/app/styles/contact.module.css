@@ -75,6 +75,8 @@
 }
 
 .contact_form{
+    position: absolute;
+    z-index: 2;
     max-width: 48rem;
     min-width: 32rem;
     padding: 3.2rem;
@@ -83,32 +85,81 @@
 }
 
 #contact_form_pre{
-    margin-left: 12rem;
+    position: relative;
+    margin-left: 10rem;
     margin-top: 5rem;
     box-shadow: rgba(0, 0, 0, 0) 0px 1px 4px;
+    height: max-content;
 }
 
-.preform{
-    display: flex;
-    flex-direction: row;
-    gap: 10rem;
+.preform {
+    z-index: 1;
 }
+
+
+
 
 .spline_comp_preform{
-    width: 70rem;
-    height: 90rem;
+    width: 90rem;
+    height: 75rem;
+    /*background: url("");*/
 }
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    width: max-content;
+    background-color: rgba(182, 60, 60, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(100px);
+
+}
+
+.backdrop{
+    position: absolute;
+    z-index: -1;
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glasscontainer {
+    position: relative;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    width: 100rem;
+    height: 69rem;
+    margin-top: 6rem;
+    margin-left: 26rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
 
 .input_field{
     margin-bottom: 2rem;
 }
 
+.input_field input:focus{
+    outline: none;
+    /*text-decoration: none;*/
+}
+
 .label{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     display: block;
+    width: 55rem;
     background: transparent;
     border: none;
-    border-bottom: 1px solid #000000;
+    border-bottom: 2px solid #000000;
     text-transform: capitalize;
 }
 
@@ -116,7 +167,7 @@
     display: block;
     border: none;
     background: transparent;
-    width: 100%;
+    width: 60rem;
     margin-top: 3rem;
     padding: .8rem 1rem;
     border-radius: .3rem;
@@ -158,6 +209,47 @@
     }
 
 }
+
+.divider_shape{
+    overflow:hidden;
+    position:relative;
+}
+.divider_shape::before{
+    content:'';
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    top: -1px;
+    z-index: 3;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-size: 100% 90px;
+    background-position: 50% 0%;
+    background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M0 .5c3.07.55 9.27-.42 16.14 0 6.88.4 13.75.57 19.14-.11V0H0z" fill="%23fbd8c2"/><path d="M0 1c3.17.8 7.29-.38 10.04-.55 2.75-.17 9.25 1.47 12.67 1.3 3.43-.17 4.65-.84 7.05-.87 2.4-.02 5.52.88 5.52.88V0H0z" opacity=".5" fill="%23fbd8c2"/><path d="M0 1.85c2.56-.83 7.68-.3 11.79-.42 4.1-.12 6.86-.61 9.58-.28 2.73.33 5.61 1.17 8.61 1 3-.19 4.73-.82 5.3-.84V.1H0z" opacity=".5" fill="%23fbd8c2"/></svg>');
+}
+
+@media (min-width:768px){
+    .divider_shape::before{
+        background-size: 100% 90px;
+        background-position: 50% 0%;
+    }
+}
+
+@media (min-width:1025px){
+    .divider_shape:before{
+        bottom: -0.1vw;
+        left: -0.1vw;
+        right: -0.1vw;
+        top: -0.1vw;
+        background-size: 209px 100%;
+        background-position: 0% 50%;
+        transform: rotateX(180deg);
+        background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2.17 35.28" preserveAspectRatio="none"><path d="M.5 35.28C1.04 32.2.07 26 .5 19.13.9 12.26 1.06 5.4.38 0H0v35.28z" fill="%23aac4ee"/><path d="M1 35.28c.8-3.17-.38-7.3-.55-10.04-.17-2.76 1.47-9.25 1.3-12.68C1.58 9.14.91 7.92.88 5.52.86 3.12 1.76 0 1.76 0H0v35.28z" opacity=".5" fill="%23aac4ee"/><path d="M1.85 35.28c-.83-2.57-.3-7.68-.42-11.8-.12-4.1-.61-6.85-.28-9.57.33-2.73 1.17-5.61 1-8.61-.19-3-.82-4.73-.84-5.3H.1v35.28z" opacity=".5" fill="%23aac4ee"/></svg>');
+    }
+}
+
+
 
 
 

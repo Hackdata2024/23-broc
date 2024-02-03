@@ -18,6 +18,7 @@ const mulish = Mulish({
 const Herosection = ({title,imageUrl,content}) => {
     return (
         <main className={herostyles.main_section}>
+            <div className={styles.card}></div>
             <div className={styles.container}>
                 <div className={styles.grid_two_section}>
                     <div className={herostyles.hero_content}>

@@ -3,7 +3,6 @@ import styles from "@/app/styles/contact.module.css"
 import {Mulish} from "next/font/google";
 import {useState} from "react";
 import Header from "@/app/components/Header";
-import Spline from "@splinetool/react-spline";
 
 const mulish = Mulish({
     weight: ['300','400','500','600','700','800','900'],
@@ -20,7 +19,8 @@ const Preform = () => {
         age:"",
         weight:"",
         date:"",
-        dosage: ""
+        dosage: "",
+        refills: ""
     })
 
     function handleChange(e) {
@@ -42,7 +42,8 @@ const Preform = () => {
                     age: user.age,
                     weight: user.weight,
                     date: user.date,
-                    dosage: user.dosage
+                    dosage: user.dosage,
+                    refills: user.refills
                 })
             })
             if (response.status === 200) {
@@ -54,7 +55,8 @@ const Preform = () => {
                     age:"",
                     weight:"",
                     date:"",
-                    dosage: ""
+                    dosage: "",
+                    refills: ""
                 })
                 setStatus('success');
             } else {
@@ -68,23 +70,23 @@ const Preform = () => {
     }
 
     return (
-        <>
-        <Header/>
-            {/*<h2 style={{marginTop: '2rem' }}>Presciption Form</h2>*/}
-        <div className={styles.preform}>
-        <form className={styles.contact_form} id={styles.contact_form_pre} onSubmit={handleSubmit}>
-            <div className={styles.input_field}>
-                <label htmlFor="p_name" className={styles.label} style={{ display: 'block', marginBottom: '8px' }}>
-
-                    <input type="text" name="p_name" id="p_name"
+        <div>
+            <Header/>
+            {/*<section className={styles.glasscontainer}></section>*/}
+            <div className={styles.preform}>
+                <form className={styles.contact_form} id={styles.contact_form_pre} onSubmit={handleSubmit}>
+                    <div className={styles.input_field}>
+                        <label htmlFor="p_name" className={styles.label} style={{ display: 'block', marginBottom: '8px' }}>
+                            Name
+                        <input type="text" name="p_name" id="p_name"
                            placeholder="Enter Patient name"
                            className={mulish.className}
                            value={user.p_name}
                            onChange={handleChange}
                            required
-                    />
-                </label>
-            </div>
+                        />
+                        </label>
+                    </div>
             <div className={styles.input_field}>
                 <label htmlFor="d_name" className={styles.label}>
 
@@ -177,19 +179,26 @@ const Preform = () => {
                 </label>
             </div>
 
+            <div className={styles.input_field}>
+                <label htmlFor="refills" className={styles.label}>
+                    <input type="number" name="refills" id="refills"
+                           placeholder="Enter number of refills"
+                           className={mulish.className}
+                           value={user.refills}
+                           onChange={handleChange}
+                           required
+                    />
+                </label>
+            </div>
+
             <div>
                 <button type="submit" className={mulish.className}>
                     Send message
                 </button>
             </div>
         </form>
-            <div className={styles.spline_comp_preform}>
-                <Spline scene="https://prod.spline.design/pmEyvZDSG9tzX92z/scene.splinecode" />
-                {/*<Spline scene="https://my.spline.design/dnaparticles-13aa542aa1a6c2e1c348a22e3d4f06a7/" />*/}
-                {/*<Image src={imageUrl} alt="image" height={100} width={500}/>*/}
-            </div>
         </div>
-        </>
+        </div>
     );
 };
 

@@ -1,12 +1,12 @@
-import Header from "@/app/components/Header";
 import Herosection from "@/app/components/herosection";
-
+import Nav from "@/app/components/Nav";
+import Header from "@/app/components/Header";
 
 const Page = () => {
     return (
         <>
             <Header/>
-            <Herosection title={"Pharmacy needs made easy"} imageUrl={"/home.svg"}/>
+            <Herosection title ={"Our Story"} imageUrl ={"./about1.svg"}/>
         </>
     );
 };

@@ -36,7 +36,7 @@ app.post("/api/formsubmit", async (req, res) => {
   id_hash = "0x"+ byteToHex(id_hash);
   const contract_address = await DeployContract(id_hash, pres_hash, 2);
   // console.log(
-  //   `Smart contract deployed at address ${contract_address} with id ${id_hash} and pres ${pres_hash}`
+  //   `Smart contract deployed att address ${contract_address} with id ${id_hash} and pres ${pres_hash}`
   // );
 
   const db = await client.db("Main");

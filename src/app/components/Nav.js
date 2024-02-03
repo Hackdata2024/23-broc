@@ -8,6 +8,7 @@ import {Mulish} from "next/font/google";
 
 const Nav = () => {
     const [openMenu, setOpenMenu] = useState(false);
+    console.log("value " + openMenu)
     return (
         <>
             <nav className={styles.navbar}>

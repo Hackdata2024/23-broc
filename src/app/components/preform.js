@@ -78,6 +78,7 @@ const Preform = () => {
         <p>{user.date}</p>
         <p>{user.dosage}</p>
         <p>{user.dosage}</p>
+        <p>{qr}</p>
       </div>
     );
   } else {

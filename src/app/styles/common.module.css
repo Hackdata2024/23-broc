@@ -9,6 +9,11 @@
     background-color: #fff!important;
 }
 
+.content_new{
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .container{
     max-width: 140rem;
     margin:0 auto;

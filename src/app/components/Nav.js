@@ -8,7 +8,6 @@ import {Mulish} from "next/font/google";
 
 const Nav = () => {
     const [openMenu, setOpenMenu] = useState(false);
-    console.log("value " + openMenu)
     return (
         <>
             <nav className={styles.navbar}>
@@ -37,7 +36,7 @@ const Nav = () => {
                         <li className={styles.Navbar_btn}>
                             <Link href="/form" onClick={() => setOpenMenu(false)}>
                                 <button>
-                                    Signup / login
+                                    Get Started
                                 </button>
                             </Link>
                         </li>

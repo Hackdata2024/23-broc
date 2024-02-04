@@ -5,9 +5,13 @@ The future of secure healthcare, our blockchain-powered system is revolutionizin
 
 ## The Team
 1. Kunal Passan [@kazekunal](https://github.com/kazekunal)
+   Frontend Dev; Prop management, Building states, Frontend design
 2. Mudit Gupta [@mudit-51](https://github.com/mudit-51)
+   Backend Dev; API development, CI/CD management. Deployment middleware
 3. Nimansh Endlay [@nimanshe](https://github.com/nimanshe)
+   Frontend Dev; Frontend design, Auth building
 4. Raj Rajeshwar Singh Bisen [@AnarchistHoneybun](https://github.com/AnarchistHoneybun)
+   Backend Dev; Smart Contract build, Compiler middleware
 
 ## Our Tech
 We utilise Next.js, Tailwind and Slint for our frontend, with a backend in Express.js and MongoDB. Our smart contracts are done in Solidity, and we interact with them through infrastructure provided by [Infura](https://docs.infura.io/getting-started).

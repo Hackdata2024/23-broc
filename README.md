@@ -24,8 +24,7 @@ Traditional prescription systems are susceptible to various forms of fraud, incl
 By harnessing the immutable and decentralized nature of blockchain, our solution provides a comprehensive defense against prescription fraud. Each prescription is securely recorded on the blockchain, creating a tamper-proof and transparent audit trail. This ensures the integrity of the prescription data from the moment it is issued by the healthcare provider to the point of fulfillment by the pharmacy.
 
 ## Where to use
-
-## We are up and running!
+Unfortunately, we couldn't deploy our system. We are glad if you stuck around this long, and we hope to return to this soon to finish it!
 
 ## Code Intricacies
 We take prescriptions from medical personnel and hash it, storing it both on a personal database and as a smart contract on the blockchain (That's our PresVerify.sol!). When patients arrive at pharmacists to get their prescribed meds, the pharma employee can verify the hashes on the database against the ones on the blockchain to ensure the prescription has not been tampered with, or is fraudulent. 

@@ -4,13 +4,13 @@ The future of secure healthcare, our blockchain-powered system is revolutionizin
 <i>(This project has been written and developed as part of the "Hackdata" hackathon, organized by the ACM Student chapter of Shiv Nadar University, on 3rd,4th February, 2024)</i>
 
 ## The Team
-1. Kunal Passan ([@kazekunal](https://github.com/kazekunal)): 
+1. <b>Kunal Passan</b> ([@kazekunal](https://github.com/kazekunal)): 
    Frontend Dev; Prop management, Building states, Frontend design
-2. Mudit Gupta ([@mudit-51](https://github.com/mudit-51)): 
+2. <b>Mudit Gupta</b> ([@mudit-51](https://github.com/mudit-51)): 
    Backend Dev; API development, CI/CD management, Deployment middleware
-3. Nimansh Endlay ([@nimanshe](https://github.com/nimanshe)): 
+3. <b>Nimansh Endlay</b> ([@nimanshe](https://github.com/nimanshe)): 
    Frontend Dev; Frontend design, Auth building
-4. Raj Rajeshwar Singh Bisen ([@AnarchistHoneybun](https://github.com/AnarchistHoneybun)): 
+4. <b>Raj Rajeshwar Singh Bisen</b> ([@AnarchistHoneybun](https://github.com/AnarchistHoneybun)): 
    Backend Dev; Smart Contract build, Compiler middleware
 
 ## Our Tech
@@ -33,7 +33,7 @@ We take prescriptions from medical personnel and hash it, storing it both on a p
 The middleware interactions we have built are the most critical parts of our codebase, providing a secure pipeline for prescriptions to be logged on the blockchain, ensuring zero SPII leak and maintaning a user experience that's not tedious or more complicated than earlier.
 
 ## The Team, again!
-1. Kunal Passan: Aspirational webdeveloper, looking for opportunities in the same. Has worked with a lot of teams, huge fan of problem solving and learning from his experiences on the go.
-2. Mudit Gupta: Budding DevOps engineer
-3. Nimansh Endlay:
+1. <b>Kunal Passan</b>: Aspirational webdeveloper, looking for opportunities in the same. Has worked with a lot of teams, huge fan of problem solving and learning from his experiences on the go.
+2. <b>Mudit Gupta</b>: Budding DevOps engineer. Loathe Java.
+3. <b>Nimansh Endlay</b>: Dev of Frontend. Believes html is a programming language.
 4. Raj Rajeshwar Singh Bisen: Born to do systems programming, forced to work with the web. Programming polyglot of sorts and avid hater of abstraction.

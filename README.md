@@ -7,7 +7,7 @@ The future of secure healthcare, our blockchain-powered system is revolutionizin
 1. Kunal Passan ([@kazekunal](https://github.com/kazekunal)): 
    Frontend Dev; Prop management, Building states, Frontend design
 2. Mudit Gupta ([@mudit-51](https://github.com/mudit-51)): 
-   Backend Dev; API development, CI/CD management. Deployment middleware
+   Backend Dev; API development, CI/CD management, Deployment middleware
 3. Nimansh Endlay ([@nimanshe](https://github.com/nimanshe)): 
    Frontend Dev; Frontend design, Auth building
 4. Raj Rajeshwar Singh Bisen ([@AnarchistHoneybun](https://github.com/AnarchistHoneybun)): 

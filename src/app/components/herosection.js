@@ -23,10 +23,10 @@ const Herosection = ({title,imageUrl,content}) => {
                 <div className={styles.grid_two_section}>
                     <div className={herostyles.hero_content}>
                         <h1>{title}</h1>
-                        <p>
-                            {content}
+                        <p align="justify" className={styles.content_new}>
+                            <b>{content}</b>
                         </p>
-                        <Link href="">
+                        <Link href="/form">
                             <button className={mulish.className}>
                                 Get Started
                             </button>

@@ -5,6 +5,7 @@ const {
   PrescriptionHash,
 } = require("./call.js");
 const { DeployContract } = require("./deploy.js");
+const {generateAndSaveQRCode} = require("./genAndSaveQRCode.js");
 
 const crypto = require("crypto");
 
@@ -33,7 +34,11 @@ app.post("/api/formsubmit", async (req, res) => {
   }
   const pres_hash = "0x" + generateRandomSHA256Hash(JSON.stringify(req.body));
   let id_hash = crypto.randomBytes(32);
-  id_hash = "0x"+ byteToHex(id_hash);
+  id_hash = byteToHex(id_hash);
+  let qr_encoded = await generateAndSaveQRCode("http://localhost:6000/api/"+id_hash);
+
+  console.log("QR code generated");
+  id_hash = "0x"+ id_hash
   const contract_address = await DeployContract(id_hash, pres_hash, 2);
   // console.log(
   //   `Smart contract deployed att address ${contract_address} with id ${id_hash} and pres ${pres_hash}`
@@ -42,20 +47,16 @@ app.post("/api/formsubmit", async (req, res) => {
   const db = await client.db("Main");
   const prescription_store = db.collection("Prescription-Data");
   const address_store = db.collection("Blockchain-addresses");
-  
-  delete req.body.p_name;
-  delete req.body.d_name;
-  
   await prescription_store.insertOne({
     IdentityHash: id_hash,
-    PrescriptionData: req.body,
     PrescriptionHash: pres_hash,
   });
   await address_store.insertOne({
     IdentityHash: id_hash,
     ContractAddress: contract_address,
   });
-  res.send(contract_address);
+  console.log(qr_encoded);
+  res.status(200).send(qr_encoded);
 });
 
 app.post("/api/verify", async(req, res)=>{
@@ -71,9 +72,9 @@ app.post("/api/verify", async(req, res)=>{
   }
   const hash_from_blockchain = await PrescriptionHash(x.ContractAddress);
   const pres_hash_store = db.collection("Prescription-Data");
-  const db_data = await pres_hash_store.findOne({IdentityHash: req.body.IdentityHash});
-  if(hash_from_blockchain === db_data.PrescriptionHash){
-    res.status(200).json(db_data.PrescriptionData);
+  const hash_from_db = await pres_hash_store.findOne({IdentityHash: req.body.IdentityHash});
+  if(hash_from_blockchain === hash_from_db.PrescriptionHash){
+    res.status(200).send("Prescription is valid");
   }else{
     res.status(400).send("Prescription is invalid");
   }

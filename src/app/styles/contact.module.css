@@ -378,6 +378,14 @@
     margin-bottom: 20rem;
 }
 
+.pagenew{
+    display: flex;
+    flex-direction: row;
+}
+
+.head_new{
+
+}
 
 
 

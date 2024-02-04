@@ -4,13 +4,13 @@ The future of secure healthcare, our blockchain-powered system is revolutionizin
 <i>(This project has been written and developed as part of the "Hackdata" hackathon, organized by the ACM Student chapter of Shiv Nadar University, on 3rd,4th February, 2024)</i>
 
 ## The Team
-1. Kunal Passan [@kazekunal](https://github.com/kazekunal)
+1. Kunal Passan ([@kazekunal](https://github.com/kazekunal)): 
    Frontend Dev; Prop management, Building states, Frontend design
-2. Mudit Gupta [@mudit-51](https://github.com/mudit-51)
+2. Mudit Gupta ([@mudit-51](https://github.com/mudit-51)): 
    Backend Dev; API development, CI/CD management. Deployment middleware
-3. Nimansh Endlay [@nimanshe](https://github.com/nimanshe)
+3. Nimansh Endlay ([@nimanshe](https://github.com/nimanshe)): 
    Frontend Dev; Frontend design, Auth building
-4. Raj Rajeshwar Singh Bisen [@AnarchistHoneybun](https://github.com/AnarchistHoneybun)
+4. Raj Rajeshwar Singh Bisen ([@AnarchistHoneybun](https://github.com/AnarchistHoneybun)): 
    Backend Dev; Smart Contract build, Compiler middleware
 
 ## Our Tech

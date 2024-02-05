@@ -34,7 +34,8 @@ Unfortunately, we couldn't deploy our system. We are glad if you stuck around th
 ## Code Intricacies
 We take prescriptions from medical personnel and hash it, storing it both on a personal database and as a smart contract on the blockchain (That's our PresVerify.sol!). When patients arrive at pharmacists to get their prescribed meds, the pharma employee can verify the hashes on the database against the ones on the blockchain to ensure the prescription has not been tampered with, or is fraudulent. 
 
-The middleware interactions we have built are the most critical parts of our codebase, providing a secure pipeline for prescriptions to be logged on the blockchain, ensuring zero SPII leak and maintaining a user experience that's not tedious or more complicated than earlier. 
+The middleware interactions we have built are the most critical parts of our codebase, providing a secure pipeline for prescriptions to be logged on the blockchain, ensuring zero SPII leak and maintaining a user experience that's not tedious or more complicated than earlier.  
+
 <img src="Attachments/img2.png" alt="game_ss" width="70%"/>
 
 ## The Team, again!

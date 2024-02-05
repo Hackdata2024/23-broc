@@ -21,8 +21,11 @@ Our project aims to address a pressing issue within the healthcare industry: med
 
 Traditional prescription systems are susceptible to various forms of fraud, including unauthorized alterations, duplicate prescriptions, and even counterfeit medications. These fraudulent activities not only jeopardize patient safety but also strain healthcare resources and erode trust in the system.
 
-By harnessing the immutable and decentralized nature of blockchain, our solution provides a comprehensive defense against prescription fraud. Each prescription is securely recorded on the blockchain, creating a tamper-proof and transparent audit trail. This ensures the integrity of the prescription data from the moment it is issued by the healthcare provider to the point of fulfillment by the pharmacy.
+By harnessing the immutable and decentralized nature of blockchain, our solution provides a comprehensive defense against prescription fraud. Each prescription is securely recorded on the blockchain, creating a tamper-proof and transparent audit trail. This ensures the integrity of the prescription data from the moment it is issued by the healthcare provider to the point of fulfillment by the pharmacy.  
+
 <img src="Attachments/img1.png" alt="game_ss" width="70%"/>
+<img src="Attachments/img2.png" alt="game_ss" width="70%"/>
+<img src="Attachments/img3.png" alt="game_ss" width="70%"/>
 
 ## Where to use
 Unfortunately, we couldn't deploy our system. We are glad if you stuck around this long, and we hope to return to this soon to finish it!

@@ -42,4 +42,4 @@ The middleware interactions we have built are the most critical parts of our cod
 1. <b>Kunal Passan</b>: Aspirational webdeveloper, looking for opportunities in the same. Has worked with a lot of teams, huge fan of problem solving and learning from his experiences on the go.
 2. <b>Mudit Gupta</b>: Budding DevOps engineer. Loathe Java.
 3. <b>Nimansh Endlay</b>: Dev of Frontend. Believes html is a programming language.
-4. Raj Rajeshwar Singh Bisen: Born to do systems programming, forced to work with the web. Programming polyglot of sorts and avid hater of abstraction.
+4. <b>Raj Rajeshwar Singh Bisen</b>: Born to do systems programming, forced to work with the web. Programming polyglot of sorts and avid hater of abstraction.

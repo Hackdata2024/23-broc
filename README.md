@@ -1,5 +1,6 @@
 # PharmLink +
-The future of secure healthcare, our blockchain-powered system is revolutionizing medical prescription management, eliminating fraud and ensuring patient safety with unparalleled transparency and accountability.
+The future of secure healthcare, our blockchain-powered system is revolutionizing medical prescription management, eliminating fraud and ensuring patient safety with unparalleled transparency and accountability.  
+<img src="Attachments/img3.png" alt="game_ss" width="70%"/>
 
 <i>(This project has been written and developed as part of the "Hackdata" hackathon, organized by the ACM Student chapter of Shiv Nadar University, on 3rd,4th February, 2024)</i>
 
@@ -24,8 +25,8 @@ Traditional prescription systems are susceptible to various forms of fraud, incl
 By harnessing the immutable and decentralized nature of blockchain, our solution provides a comprehensive defense against prescription fraud. Each prescription is securely recorded on the blockchain, creating a tamper-proof and transparent audit trail. This ensures the integrity of the prescription data from the moment it is issued by the healthcare provider to the point of fulfillment by the pharmacy.  
 
 <img src="Attachments/img1.png" alt="game_ss" width="70%"/>
-<img src="Attachments/img2.png" alt="game_ss" width="70%"/>
-<img src="Attachments/img3.png" alt="game_ss" width="70%"/>
+
+
 
 ## Where to use
 Unfortunately, we couldn't deploy our system. We are glad if you stuck around this long, and we hope to return to this soon to finish it!
@@ -33,7 +34,8 @@ Unfortunately, we couldn't deploy our system. We are glad if you stuck around th
 ## Code Intricacies
 We take prescriptions from medical personnel and hash it, storing it both on a personal database and as a smart contract on the blockchain (That's our PresVerify.sol!). When patients arrive at pharmacists to get their prescribed meds, the pharma employee can verify the hashes on the database against the ones on the blockchain to ensure the prescription has not been tampered with, or is fraudulent. 
 
-The middleware interactions we have built are the most critical parts of our codebase, providing a secure pipeline for prescriptions to be logged on the blockchain, ensuring zero SPII leak and maintaining a user experience that's not tedious or more complicated than earlier.
+The middleware interactions we have built are the most critical parts of our codebase, providing a secure pipeline for prescriptions to be logged on the blockchain, ensuring zero SPII leak and maintaining a user experience that's not tedious or more complicated than earlier. 
+<img src="Attachments/img2.png" alt="game_ss" width="70%"/>
 
 ## The Team, again!
 1. <b>Kunal Passan</b>: Aspirational webdeveloper, looking for opportunities in the same. Has worked with a lot of teams, huge fan of problem solving and learning from his experiences on the go.
